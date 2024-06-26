@@ -1,0 +1,92 @@
+---
+import { getCollection } from "astro:content";
+import { SEO } from "astro-seo";
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+const allProjects = await getCollection("projects");
+const pageTitle = "Daniel Rosehill CV and Resume";
+const metatitle = "Daniel Rosehill CV and Resume";
+const metadesc = "Daniel Rosehill's CV and resume on the internet";
+const ogtitle = "Daniel Rosehill CV/Resume";
+const ogtwittertitle = "Daniel Rosehill CV/Resume";
+const ogtwitterdesc = "Daniel Rosehill's CV/resume on the internet";
+---
+<SEO
+    title={metatitle}
+    description={metadesc}
+    openGraph={{
+      basic: {
+        title: ogtitle,
+        type: 'content',
+        image: "https://danielrosehill.com/ogthumbs/dr-default.png",
+      }
+    }}
+    twitter={{
+      creator: "@danielrosehill"
+    }}
+    extend={{
+      // extending the default link tags
+      link: [{ rel: "icon", href: "/favicon.ico" }],
+      // extending the default meta tags
+      meta: [
+        {
+          name: "twitter:image",
+          content: "https://danielrosehill.com/circlehs.png",
+        },
+        { name: "twitter:title", content: {ogtwittertitle}},
+        { name: "twitter:description", content: {ogtwitterdesc}},
+      ],
+    }}
+  />
+<Layout pageTitle={pageTitle}>
+
+  <img src="/graphics/cv.png" class="body-width" />
+  
+    <br/>
+    <h2>Resume / CV</h2>
+    <div class="center">
+        <a href="/docs/cv.pdf" target="_blank">
+            <button class="btn">Download</button>
+        </a>
+    </div>
+    <h2>Career</h2>
+    <p>I've spent most of my career to date working in<br/><b>technology communications</b></p>
+    <img src="/graphics/tech.png" class="body-width" />
+<br/>
+    <p>Lately, I've been enjoying visualising data. I think that <b>data</b> and <b>policy</b> offer a fascinating point of intersection. </p>
+<br/>
+
+    <img src="/graphics/slothgraphs.webp" class="body-width" />
+
+    <h2>The Comms Things I Know</h2>
+
+    <p>Communications / Writing & Editing / PR</p>
+    <p>Video production</p>
+
+    <h2>Tools</h2>
+    <div class="center">
+      <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/wordpress.svg" class="skillicon" alt="Wordpress Icon" width="40" height="40">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/mailchimp.svg" class="skillicon" alt="Github Icon" width="40" height="40">
+    
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/googleanalytics.svg" class="skillicon" alt="Github Icon" width="40" height="40">
+  </div>
+  </div>
+    
+
+    <h2>Languages & Frameworks</h2>
+    <div class=center>
+   
+  
+  <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/html5.svg" class="skillicon" alt="HTML Icon" width="40" height="40">
+  <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg" class="skillicon" alt="Github Icon" width="40" height="40">
+  <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/linux.svg" class="skillicon" alt="Linux Icon" width="40" height="40">
+    
+
+
+
+</div>
+    <h2>Learning</h2>
+<div class=center>
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/postgresql.svg" class="skillicon" alt="PostgreSQL Icon" width="60"  />
+</div>
+</Layout>

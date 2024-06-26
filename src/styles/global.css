@@ -1,0 +1,758 @@
+
+
+/* Global styles */
+:root {
+   
+    --background-light: #2a42640d;
+    --button: #78c2ad;
+    --text: #fdebf3;
+   
+    --text-link: #090a4c;
+    --underline: #1a3858;
+    --header: 'Poppins', cursive;
+    --body: 'Poppins', sans-serif; 
+}
+
+.typewriter {
+   font-family: typewriter;
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+
+
+.work-sans  {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.wavy-divider {
+    width: 100%;
+    height: 10px;
+    margin: 25px 0;
+    background: lightgrey;
+    background-image: repeating-linear-gradient(
+        90deg,
+        lightgrey 0,
+        lightgrey 5px,
+        white 5px,
+        white 10px
+    );
+}
+
+.wavydiv2 {
+    width: 100%;
+    height: 5px;
+    margin: 10px 10px;
+    background: lightgrey;
+    background-image: repeating-linear-gradient(
+        90deg,
+        lightgrey 0,
+        lightgrey 5px,
+        white 5px,
+        white 10px
+    );
+}
+
+
+
+html {
+    background-color: var(--background);
+    color: var(--text);
+}
+
+body {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.pagebadge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: var(--header);
+    font-weight: normal;
+    color: #162393; 
+    background-color: rgba(128, 128, 128, 0.05);  
+    border-radius: 5px;  
+    text-align: center;
+    text-decoration: normal var(--underline);
+    text-decoration-thickness: 4px;
+    text-underline-offset: 6px;
+    font-size: 3rem;  
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: var(--header);
+    font-weight: normal;
+    color: #162393; 
+    background-color: rgba(128, 128, 128, 0.05); /* Gray background with 10% opacity */
+    border-radius: 5px; /* Optional: adds slightly rounded corners */
+    text-align: center;
+    text-decoration: normal var(--underline);
+    text-decoration-thickness: 4px;
+    text-underline-offset: 6px;
+    font-size: 2.5rem; /* Original font size for h2 */
+    margin-bottom: 20px;
+}
+
+
+h3 {
+    font-family: var(--header);
+    font-weight: normal;
+    color:#162393; 
+    text-align: center;
+    text-decoration: normal var(--underline);
+    text-decoration-thickness: 4px;
+    text-underline-offset: 6px;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+
+}
+
+
+.projects
+
+{
+    font-size: 2.7rem;
+}
+
+h1 {
+    font-size: 3.4rem;
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 2s ease-in forwards;
+}
+
+
+ 
+
+h2 {
+    text-decoration: normal var(--underline);
+    text-decoration-thickness: 4px;
+    text-underline-offset: 6px;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.page-images {
+    max-width: 100%;
+    height: auto;
+}
+
+ 
+
+p {
+    font-family: var(--body);
+    font-size: 1.3rem;
+    hyphens: auto;
+    line-height: 1.5;
+    text-indent: 1rem;
+    word-break: keep-all !important;
+    overflow-wrap: normal !important;
+    text-align:center;
+     
+}
+
+.codeblock {
+    font-family: var(--body);
+    font-size: 0.7rem;
+    hyphens: auto;
+    line-height: 1.5;
+    text-indent: 1rem;
+    word-break: keep-all;
+    overflow-wrap: normal;
+    text-align:center;
+}
+
+.para2 {
+    font-family: var(--body);
+    font-size: 1.3rem;
+    hyphens: auto;
+    text-align:center;
+    line-height: 1.5;
+     
+     
+    
+     
+}
+
+.home-desc {
+    text-align:center;
+    font-size: 1.3rem;
+    color: #ffffffe3;
+     padding-bottom: 10px;
+}
+
+i {
+    
+    font-family: var(--body);
+    font-size: 1.2rem;
+    hyphens: auto;
+    line-height: 1.5;
+    text-indent: 1rem;
+    word-break: keep-all;
+    overflow-wrap: normal;
+    text-align: center;
+    
+   
+
+    }
+
+small, li {
+    font-family: var(--body); 
+    font-size: 1.3rem;
+}
+
+/* Navigation Bar */
+.navbar {
+    
+    margin: 20px 0;
+    display:flex;
+   justify-content:center;
+     
+}
+
+.navbar__title {
+    font-family: var(--header);
+    font-size: 1.rem;
+}
+
+.navbar__menu {
+    font-family: var(--body);
+    font-size: 1.4rem;
+    text-align: right;
+}
+
+.navbar__title > a, .navbar__menu > a {
+    color: var(--text);
+    text-decoration: none;
+}
+
+.navbar__menu > a {
+    margin: 0 10px;
+}
+
+.navbar__title > a:hover, .navbar__menu > a:hover, .navbar__menu > a:focus {
+    text-decoration: underline var(--underline);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px;
+}
+
+/* Gifs */
+.gif {
+    margin: 20px 0 10px 0;
+    text-align: center;
+    
+}
+
+/* Badge */
+.badge {
+    background-color: #584966;
+    color: var(--text);
+    border-radius: 6px;
+    font-family: var(--body);
+    font-weight: 600;
+    font-size: .85rem;
+    padding: 0.3em 0.6em 0.2em;
+    margin: 0 auto;
+    
+     
+}
+
+.linkbadge {
+    display:flex;
+    text-align:center;
+    
+}
+
+.badge__list {
+    text-indent: 1rem;
+    list-style: none;
+    padding: 0;
+}
+
+.badge__list > li {
+    margin-top: 10px;
+}
+
+.badge--item {
+    border-radius: 4px;
+    font-size: 0.7rem;
+    margin-right: 5px;
+    padding: 0.5em 0.3em 0.3em 0.3em;
+}
+
+.badge__link {
+    color: var(--text-link);
+    text-decoration: none;
+}
+
+.badge__link:hover {
+    text-decoration: underline;
+}
+
+/* Cards */
+.card {
+    list-style: none;
+    display: flex;
+    background-size: 400%;
+    padding: 20px;
+}
+
+.card__link {
+    width: 100%;
+    text-decoration: none;
+    line-height: 1.4;
+    border-radius: 8px;
+    color: var(--text);
+}
+
+.card__img {
+    border-radius: 16px;
+}
+
+.img {
+     
+    display: block;  
+    margin: 0 auto;  
+}
+
+ 
+.body-width {
+    width: 100%;
+}
+
+ 
+
+.card__title {
+    margin: 0;
+    font-family: var(--body);
+    font-size: 1.5rem;
+    font-weight: normal;
+    text-align: center;
+}
+
+.card__txt {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-indent: 0;
+    text-align: center;
+    margin: 0.5rem 0 0;
+}
+
+.card__link:hover {
+    transform: scale(1.05);
+}
+
+.link-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+    gap: 1rem;
+    padding: 0;
+}
+
+/* Button */
+.btn {
+    text-align: center;
+    background: rgba(0,0,0,0);
+    border: 2px solid var(--button);
+    border-radius: 8px;
+    font-family: "Kanit";
+    color: var(--text);
+    font-size: 20px;
+    padding: 8px 16px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    transition: background-color 0.4s, color 0.4s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn:hover {
+    background-color: var(--button);
+    color: var(--text-light);
+    cursor: pointer;
+}
+.button-container {
+    text-align: center;
+  }
+  
+  .button-label {
+    display: inline-block;
+    width: fit-content;
+    padding: 10px 20px;
+    font-family: "Kanit";
+    font-style: normal;
+    font-size: 20px;    
+    color: #ffffff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 30px;
+  }
+  
+  .button-label:hover {
+    background-color: #45a049;
+  }
+  
+  .button-label:active {
+    background-color: #3e8e41;
+  }
+  
+  .button-label:focus {
+    outline: none;
+  }
+  
+
+/* Skills */
+.skills {
+    margin-top: 8px;
+    
+     
+}
+
+.skillicon {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.skills__img {
+    margin: 8px 4px;
+}
+
+/* Items */
+.center {
+    text-align: center;
+}
+
+.pro-img {
+    border-radius: 16px;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    margin: 4rem 0;
+}
+
+.footer__link {
+    color: var(--text-link);
+    text-decoration: none;
+}
+
+.footer {
+    cursor: default;
+    list-style: none;
+    padding: 0;
+}
+
+.icon__btn {
+    display: inline-block;
+    padding: 0 0.5rem;
+}
+
+.icon__link {
+    display: flex;
+    padding: 10px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 2px solid #fdebf3;
+}
+
+.icon__link:hover {
+    border-color: var(--text-link);
+}
+
+
+.git-icon {
+    content: url("/github-mark-white.svg");
+}
+
+.mail-icon {
+    content: url("/mail-white.svg");
+}
+
+.linked-in {
+    content: url("/li-in-white.png");
+}
+
+/* 404 */
+.lost {
+    margin-top: 30%;
+    text-align: center;
+}
+
+.lost__header {
+    margin: 0 auto;
+    text-align: center;
+    border: 0;
+    font-size: 7.5rem;
+    letter-spacing: 10px;
+}
+
+.lost__body {
+    color: #5C5B77;
+}
+
+.lost__link {
+    color: var(--text-link);
+    text-decoration: none;
+}
+
+/* Theme Icon */
+html.light {
+    background-color: var(--background-light);
+    color: var(--text-light);
+}
+
+.light .navbar__title > a {
+    color: var(--text-light);
+}
+
+.light .navbar__menu > a {
+    color: var(--text-light);
+}
+
+.light .card__title {
+    color: var(--text-light); 
+}
+
+.light .home-desc {
+    color: var(--text-light); 
+}
+
+.light .card__txt {
+    color: var(--text-light); 
+}
+
+.light .btn {
+    color: var(--text-light);
+}
+
+.light .btn:hover {
+    color: var(--text);
+}
+
+.light .icon__link {
+    border: 2px solid var(--text-light);
+}
+
+.light .icon__link:hover {
+    border-color: var(--text-link);
+}
+
+.light .git-icon {
+    content: url("/github-mark.svg");
+}
+
+.light .mail-icon {
+    content: url("/mail.svg");
+}
+
+.light .linked-in {
+    content: url("/li-in.png");
+}
+
+.light .badge__link {
+    color: var(--text-link);
+}
+
+ 
+
+/* Media Query */
+@media only screen and (max-width: 600px) {
+    body {
+        width: 350px;
+    }
+
+    .navbar {
+        display: initial;
+    }
+
+    .navbar__title {
+        text-align: center;
+    }
+
+    .navbar__menu {
+        text-align: center;
+        
+       align-items: center;
+    }
+
+    .navbar__menu > a {
+        margin: 0 11px;
+    }
+
+    .skills__img {
+        height: 30px;
+        width: 30px;
+        margin: 8px 1px;
+    }
+
+    .badge__list {
+        font-size: 0.9rem;
+        text-indent: 0;
+    }
+
+    .pro-img {
+        height: auto;
+        width: 350px;
+    }
+}
+
+/* Stylesheets for custom fonts */
+
+@font-face {
+    font-family: 'typewriter';
+    src: url('/src/fonts/typewriter.ttf') format('truetype');       
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body {
+    font-family: 'MyCustomFont', sans-serif;
+  }
+  
+
+.kanit-thin {
+    font-family: "Kanit", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .kanit-extralight {
+    font-family: "Kanit", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .kanit-light {
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .kanit-regular {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .kanit-medium {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .kanit-semibold {
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .kanit-bold {
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .kanit-extrabold {
+    font-family: "Kanit", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .kanit-black {
+    font-family: "Kanit", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .kanit-thin-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .kanit-extralight-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .kanit-light-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .kanit-regular-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .kanit-medium-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .kanit-semibold-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .kanit-bold-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .kanit-extrabold-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .kanit-black-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  

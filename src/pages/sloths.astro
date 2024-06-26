@@ -1,0 +1,348 @@
+---
+// Astro Frontmatter
+import { getCollection } from "astro:content";
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import { SEO } from "astro-seo";
+import { Image } from 'astro:assets';
+const allProjects = await getCollection("projects");
+const pageTitle = "Sloth pics";
+const metatitle = "Projects That I'm Currently Working On - Daniel Rosehill";
+const metadesc = "Some projects and initiatives that I am currently working on including hobby projects and work initiatives";
+const ogtitle = "Projects That I'm Currently Working On - Daniel Rosehill";
+const ogtwittertitle = "Projects That I'm Currently Working On - Daniel Rosehill";
+const ogtwitterdesc = "Some projects and initiatives that I am currently working on including hobby projects and work initiatives";
+---
+ 
+<SEO
+  title={metatitle}
+  description={metadesc}
+  openGraph={{
+    basic: {
+      title: ogtitle,
+      type: 'content',
+      image: "https://danielrosehill.com/ogthumbs/projectsog.png",
+    }
+  }}
+  twitter={{
+    creator: "@danielrosehill"
+  }}
+  extend={{
+    // extending the default link tags
+    link: [{ rel: "icon", href: "/favicon.ico" }],
+    // extending the default meta tags
+    meta: [
+      {
+        name: "twitter:image",
+        content: "https://danielrosehill.com/circlehs.png",
+      },
+      { name: "twitter:title", content: ogtwittertitle },
+      { name: "twitter:description", content: ogtwitterdesc },
+    ],
+  }}
+/>
+
+<Layout pageTitle={pageTitle}>
+
+  <h1>AI Sloths Image Repository</h1>
+
+  <p>Images generated with DALLE3</p>
+  <p>Prompts, weird imagination: me</p>
+
+  <div class="wavy-divider"></div>
+
+  <h2 id="sloths-are-often-found-waiting-in-line-at-cafeterias">Sloths Are Often Found Waiting In Line At Cafeterias</h2>
+<p>  The last time I checked, zoologists still hadn&#39;t cracked the mystery of why sloths make the perilous journey from the canopy simply to defecate.</p>
+<p>  But the working assumption among sloth enthusiasts is that it&#39;s because sloths are patient and considerate beings.</p>
+<p>  If I encountered a sloth waiting in line for food at a cafeteria, I&#39;m hopeful it would look something like this:</p>
+<p>  <img src="/images/sloths/1.webp" alt="Sloth waiting in canteen" class="body-width">
+  <img src="https://img.shields.io/badge/DALL%C2%B7E%203-black?style=flat" alt="DALL·E 3"></p>
+<div class="wavydiv2"></div>
+<h2 id="if-they-re-not-eating-in-one-they-might-work-there-as-a-chef">If They&#39;re Not Eating In One, They Might Work There As A Chef</h2>
+<p>  As a creative (at least a self-described one) I have what you might call a visual imagination.</p>
+<p>  But DALLE makes me wonder why I HAVEN&#39;T imagined certain things before.</p>
+<p>  Like ... a sloth wearing a chef&#39;s hat:</p>
+<p>  <img src="/images/sloths/slothchef.webp" alt="Sloth waiting in canteen" class="body-width">
+  <img src="https://img.shields.io/badge/DALL%C2%B7E%203-black?style=flat" alt="DALL·E 3"></p>
+<div class="wavydiv2"></div>
+<h2 id="sloths-are-voracious-newspaper-readers-and-usually-read-them-in-their-tree">Sloths Are Voracious Newspaper Readers And Usually Read Them In Their Tree</h2>
+<p>  Unfortunately nobody sane has had a conversation with a sloth yet although rumor has it that with enough <em>ayahuasca</em> the experience is achievable.</p>
+<p>  But if they did, I feel certain that they would report back that they are naturally inquisitive beings.</p>
+<p>  This is what DALLE piped back for:</p>
+<p>  <code>Please generate a photo of a sloth reading the morning newspaper in a tree</code> (yes, I actually write &#39;please&#39; in my prompts).</p>
+<p>  <img src="/images/sloths/slothnewspaper.webp" alt="Sloth waiting in canteen" class="body-width">
+  <img src="https://img.shields.io/badge/DALL%C2%B7E%203-black?style=flat" alt="DALL·E 3"></p>
+<div class="wavydiv2"></div>
+<h2 id="sloths-are-slow-but-they-ain-t-dumb-22-of-sloths-including-this-one-hold-a-phd-or-higher">Sloths Are Slow, But They Ain&#39;t Dumb. 22% Of Sloths, Including This One, Hold A PhD - Or Higher</h2>
+<p>  I mean how could you <em>not</em> want to stick around!</p>
+<p>  <img src="/images/sloths/librarysloth.jpg" alt="Sloth in library" class="body-width">
+  <img src="https://img.shields.io/badge/DALL%C2%B7E%203-black?style=flat" alt="DALL·E 3"></p>
+<h2 id="if-you-believe-they-put-a-sloth-on-the-moon">If You Believe, They Put A Sloth On The Moon</h2>
+<p>  Some conspiracy theorists have even alleged that it was a sloth - not a human - that first walked on the moon.</p>
+<p>  But the US Government apparently kept a lid on the news out of fear that it would stoke panic that sloths were poised to take over the world.</p>
+<p>  This photo is claimed to be authentic although most contest that:</p>
+<p>  <img src="/images/sloths/moonsloth.webp" alt="Sloth on the moon" class="body-width">
+  <img src="https://img.shields.io/badge/DALL%C2%B7E%203-black?style=flat" alt="DALL·E 3"></p>
+<div class="wavydiv2"></div>
+<h2 id="sloths-love-nothing-better-than-a-good-movie">Sloths Love Nothing Better Than A Good Movie</h2>
+<p>  But they go at weird times so you&#39;ve probably always missed them</p>
+<p>  <img src="/images/sloths/slothincinema.webp" alt="Sloth in cinema" class="body-width">
+  <img src="https://img.shields.io/badge/DALL%C2%B7E%203-black?style=flat" alt="DALL·E 3"></p>
+<div class="wavydiv2"></div>
+<h2 id="sloths-love-their-leaves">Sloths Love Their Leaves</h2>
+<p>  As is well known sloths love their leaves.</p>
+<p>  Domesticated ones eat them as cereal floated in milk. Like this:</p>
+<p>  <img src="/images/sloths/slothbreakfast.webp" alt="Breakfast food" class="body-width">
+  <img src="https://img.shields.io/badge/DALL%C2%B7E%203-black?style=flat" alt="DALL·E 3"></p>
+<div class="wavydiv2"></div>
+<h2 id="a-significant-amount-of-movies-are-actually-directed-by-sloths">A significant amount of movies are actually directed by sloths</h2>
+<p>  Sloths are hard-working and prefer to be off-camera. But sloths have been the masterminds behind many of cinema&#39;s best-loved productions.</p>
+<p>  <img src="/images/sloths/slothdirector.webp" alt="Sloth director" class="body-width">
+  <img src="https://img.shields.io/badge/DALL%C2%B7E%203-black?style=flat" alt="DALL·E 3"></p>
+<div class="wavydiv2"></div>
+<h2 id="they-go-to-bars-too-stout-is-their-favorite-drink">They Go To Bars Too. Stout Is Their Favorite Drink</h2>
+<p>  Sloths love beer but Guinness stands out as their favorite tipple.</p>
+<p>  If you drink enough of them in quick succession, your chances of seeing one increase exponentially.</p>
+<p>  <img src="/images/sloths/slothdrinkingguinness.png" alt="Sloth in library" class="body-width">
+  <img src="https://img.shields.io/badge/DALL%C2%B7E%203-black?style=flat" alt="DALL·E 3"></p>
+<div class="wavydiv2"></div>
+<h2 id="sloths-go-on-dates-in-jungles">Sloths Go On Dates In Jungles</h2>
+<p>  I belatedly realised that all my sloth AI creations to date have been male sloths. Which I guess is what happens when you fantasise about having a pub-going sloth as a drinking buddy.</p>
+<p>  Here&#39;s a female sloth getting ready for a big date in the jungle:</p>
+<p>  <img src="/images/sloths/lipsticksloth.webp" alt="Sloth in library" class="body-width">
+  <img src="https://img.shields.io/badge/DALL%C2%B7E%203-black?style=flat" alt="DALL·E 3"></p>
+<div class="wavydiv2"></div>
+<h2 id="some-sloths-work-as-programmers">Some Sloths Work As Programmers</h2>
+<p>  I&#39;ve spent a large part of the last few months toiling away on a <a href="https://www.impactdatabase.org" target="_blank">data visualisation website</a>.</p>
+<p>  This has meant dabbling in such delightful things as PostgreSQL, Python, managing VPSes, and all the rest of it.</p>
+<p>  At 35, I&#39;m in awe of the many very young instructors teaching courses at places like <a href="https://www.datacamp.com" target="_blank">DataCamp</a>.</p>
+<p>  I imagine this is something like how I look to them:</p>
+<p>  <img src="/images/sloths/slothoncomputer.webp"  class="body-width" alt="Sloth in library">
+  <img src="https://img.shields.io/badge/DALL%C2%B7E%203-black?style=flat" alt="DALL·E 3"></p>
+<div class="wavydiv2"></div>
+<h2 id="you-may-even-see-a-sloth-at-the-western-wall-in-jerusalem">You May Even See A Sloth At The Western Wall In Jerusalem</h2>
+<p>  <img src="/images/sloths/slothatkotel.webp" alt="Sloth at kotel" class="body-width">
+  <img src="https://img.shields.io/badge/DALL%C2%B7E%203-black?style=flat" alt="DALL·E 3"></p>
+<p>  I live in Jerusalem and the Western Wall (Hebrew: Kotel) is probably the most iconic site in this city.</p>
+<p>  The only sloth in Israel currently resides at the Ramat Gan Zoo near Tel Aviv. So if you ever see a sloth at the Western Wall, LSD or <a href="https://en.wikipedia.org/wiki/Jerusalem_syndrome">Jerusalem Syndrome</a> is probably the culprit.</p>
+<p>  But you never know. If you did, it might look a bit like this.</p>
+<div class="wavydiv2"></div>
+<h2 id="sloths-and-koalas-sometimes-hang-out-and-talk-about-trees">Sloths And Koalas Sometimes Hang Out And Talk About Trees</h2>
+<p>  I have a low-key aspiration to use AI-generated images just like these to write a children&#39;s book - or a few of them.</p>
+<p>  Becoming a children&#39;s book author doesn&#39;t really align with my current career objectives, however, so it will probably remain just a vague aspiration for the foreseeable future.</p>
+<p>  But I can&#39;t help but think about what joy little images like this might bring to the world!</p>
+<p>  <img src="/images/sloths/sloths_koalas.webp" alt="Sloth and koala" class="body-width">
+  <img src="https://img.shields.io/badge/DALL%C2%B7E%203-black?style=flat" alt="DALL·E 3"></p>
+<p>  And here&#39;s one of those times when AI just goes off in its peculiar directions.</p>
+<p>  For reasons that evade me, all my subsequent generations for <code>a sloth and a koala hanging out on a bench</code> wound up with one animal or the other being oddly sized. Like this:</p>
+<p>  <img src="/images/sloths/sloth_and_koala_2.webp" alt="Sloth and koala" class="body-width">
+  <img src="https://img.shields.io/badge/DALL%C2%B7E%203-black?style=flat" alt="DALL·E 3"></p>
+<p>  Koalas and sloths don&#39;t really have a lot in common.</p>
+<p>  The wonderful people at the Sloth Conservation Foundation have a nice blog that tries to dispel the myth that sloths are famously long sleepers.</p>
+<p>  Sloths in the wild only sleep about 8 to 10 hours per day - which on your average Saturday would make <em>me</em> the slovenly one. The purported excess is (tragically) likely a stress response exhibited when sloths are in captivity. Koalas on the other hand <em>actually</em> sleep an awful lot - in the order of up to 20 hours a day!</p>
+<p>  <img src="/images/sloths/slothdoctor.png" alt="Sloth doctor" class="body-width">
+  <img src="https://img.shields.io/badge/DALL%C2%B7E%203-black?style=flat" alt="DALL·E 3"></p>
+<div class="wavydiv2"></div>
+<h2 id="this-is-your-captain-speaking-we-had-a-routine-departure-out-of-san-jos-today">This Is Your Captain Speaking: We Had A Routine Departure Out Of San José Today</h2>
+<p>  <img src="/images/sloths/slothpilot.webp" alt="Sloth airplane pilot" class="body-width">
+  <img src="https://img.shields.io/badge/DALL%C2%B7E%203-black?style=flat" alt="DALL·E 3"></p>
+<p>  I mean in the relatively long history of aviation it&#39;s probable that a sloth <em>has</em> been brought into the cockpit of an airplane at some point.</p>
+<p>  This is purported to be the only actual photographic evidence of one.</p>
+<div class="wavydiv2"></div>
+<h2 id="sloth-in-a-rush-it-happens-their-favorite-meal-on-the-go-is-a-burrito">Sloth In A Rush? It Happens. Their Favorite Meal On The Go Is A Burrito</h2>
+<p>  <img src="/images/sloths/burritosloth.webp" alt="Sloth airplane pilot" class="body-width">
+  <img src="https://img.shields.io/badge/DALL%C2%B7E%203-black?style=flat" alt="DALL·E 3"></p>
+<div class="wavydiv2"></div>
+<h2 id="sloths-enjoy-pancakes">Sloths Enjoy Pancakes</h2>
+<p>  For my sake and for theirs, I really hope nobody&#39;s written that sentence before.</p>
+<p>  But here&#39;s a photo which proves that it&#39;s true:</p>
+<p>  <img src="/images/sloths/slothpancake.webp" alt="Sloth pancake" class="body-width">
+  <img src="https://img.shields.io/badge/DALL%C2%B7E%203-black?style=flat" alt="DALL·E 3"></p>
+<div class="wavydiv2"></div>
+<h2 id="sloths-have-to-take-their-meds-just-like-the-rest-of-us">Sloths Have To Take Their Meds Just Like The Rest Of Us</h2>
+<p>  I&#39;m a big supporter of efforts to destigmatise mental illness.</p>
+<p>  The creative in me can&#39;t help but think that efforts to normalise things like taking psychotropic medication would benefit from ... you know ... advocacy campaigns with sloths in them.</p>
+<p>  <img src="/images/sloths/slothtakesmeds.webp" alt="Sloth pancake" class="body-width">
+  <img src="https://img.shields.io/badge/DALL%C2%B7E%203-black?style=flat" alt="DALL·E 3"></p>
+<div class="wavydiv2"></div>
+<h2 id="you-might-even-see-a-sloth-on-the-bus-">You Might Even See A Sloth On The Bus!</h2>
+<p>  (Divergence from sloth theme into mini blog)</p>
+<p>  Life has been busy lately (yes, says the person generating sloth images on DALLE).</p>
+<p>  But at some point I fully intend writing a post raging about how Jerusalem is ruining public transport through an intimidating and frankly oppressive regime of ticket inspections.</p>
+<p>  Noone is quite sure why. But for about the past year the bus companies have been allowed to set hoardes of marauding ticket inspectors upon the public transport using public.</p>
+<p>  My personal record is having my ticket &quot;validated&quot; no less than four times on a single journey. Having it inspected three times is pretty routine. I usually end up resolving to just walk next time.</p>
+<p>  Fare evasion is presumably a problem here as it is in all public tranpsort systems. But it seems pretty clear that clamping down on petty crime is not the motivator.</p>
+<p>  Making public transport usage as unpleasant as possible for the fare-paying majority of its users is a horrible and supremely short-sighted policy.</p>
+<p>  This is true anywhere but especially so in a city and country toiling under some of the worst road congestion in the OECD (caused by cars, not teenagers dodging bus tickets). Tourists&#39; first encounter with the city is often being dealt arbitrary justice by surly inspectors. On various levels, it&#39;s idiotic.</p>
+<p>  Sweet smiling sloths on bus journeys might lift everyone&#39;s spirits.</p>
+<p>  <img src="/images/sloths/slothonbus.webp" alt="Sloth on bus" class="body-width">
+  <img src="https://img.shields.io/badge/DALL%C2%B7E%203-black?style=flat" alt="DALL·E 3"></p>
+<div class="wavydiv2"></div>
+<h2 id="sloths-aren-t-always-upbeat-and-smiley-there-are-jaded-and-cynical-sloths-like-this-one-but-they-rarely-get-photographed">Sloths Aren&#39;t Always Upbeat And Smiley. There Are Jaded And Cynical Sloths Like This One But ... They Rarely Get Photographed</h2>
+<p>  It&#39;s one of those industry secrets that we all wished wasn&#39;t true: grumpy sloths are definitely a thing.</p>
+<p>  Sloths are almost always depicted as permanently jovial beings (apparently their constant &#39;smile&#39; is actually an anatomical fact and has nothing to do with their purported good mood.)</p>
+<p>  So to shake up their image a bit, I asked DALLE to give me an image to shake off sloths&#39; clean-living reputation:</p>
+<pre><code>  Please generate <span class="hljs-selector-tag">a</span> photo of <span class="hljs-selector-tag">a</span> sloth smoking <span class="hljs-selector-tag">a</span> cigarette looking pretty bad and dishevelled
+</code></pre><p>  It did <em>not</em> disappoint!</p>
+<p>  &quot;Happy? I&#39;m not happy. Do you have a light?&quot; is all we could get out of him.</p>
+<p>  <img src="/images/sloths/smokingsloth.webp" alt="Smoking sloth" class="body-width">
+  <img src="https://img.shields.io/badge/DALL%C2%B7E%203-black?style=flat" alt="DALL·E 3"></p>
+<div class="wavydiv2"></div>
+<h2 id="sloths-have-pets-dogs-and-cats-are-the-most-popular-options">Sloths Have Pets. Dogs And Cats Are The Most Popular Options</h2>
+<p>  The previous guy has a more respectable cousin who works in finance and takes his small dogs for walks after a long day at the office:</p>
+<p>  <img src="/images/sloths/slothwalkingdog.webp" alt="Smoking sloth" class="body-width">
+  <img src="https://img.shields.io/badge/DALL%C2%B7E%203-black?style=flat" alt="DALL·E 3"></p>
+<div class="wavydiv2"></div>
+<h2 id="sloth-adore-time-at-the-beach">Sloth Adore Time At The Beach</h2>
+<p>  If you haven&#39;t spotted one at the beach yet you mightn&#39;t have been paying attention.</p>
+<p>  You know that if sloths had the power of ambulation at a pace of more than 0.27 km/h they would eventually find their way to the nearest beach.</p>
+<p>  And buy some shades. And a bottle of beer.</p>
+<p>  <img src="/images/sloths/slothatbeach.webp" alt="Sloth at the beach" class="body-width">
+  <img src="https://img.shields.io/badge/DALL%C2%B7E%203-black?style=flat" alt="DALL·E 3"></p>
+<div class="wavydiv2"></div>
+<h2 id="sloths-are-considered-experts-on-sustainable-living-a-sloth-teaches-a-course-on-exactly-this-at-berkeley">Sloths Are Considered Experts On Sustainable Living. A Sloth Teaches A Course On Exactly This At Berkeley</h2>
+<p>  A bunch of books have been published in recent years saying that us humans need to learn a thing or two from the sloths and their mastery of energy conservation (although apparently it&#39;s more their powers of camouflage that account for their otherwise baffling defiance of natural selection).</p>
+<p>  If that actually went down, it might look something like this:</p>
+<p>  <img src="/images/sloths/slothteachingclass.webp" alt="Sloth teaching classroom" class="body-width">
+  <img src="https://img.shields.io/badge/DALL%C2%B7E%203-black?style=flat" alt="DALL·E 3"></p>
+<div class="wavydiv2"></div>
+<h2 id="there-are-historic-photos-of-sloths-dating-back-centuries">There Are Historic Photos Of Sloths Dating Back Centuries</h2>
+<p>  One of the earliest documented photos of a sloth from the 19th century.</p>
+<p>  His name was Henry. His manners were immaculate. And despite the complaints of colleagues that &quot;Henry, it&#39;s dress-down Friday, you&#39;re making us look bad&quot; he would always wear his hallmark bowtie and hat to the office.</p>
+<p>  <img src="/images/sloths/historicalsloth.webp" alt="Historical sloth" class="body-width">
+  <img src="https://img.shields.io/badge/DALL%C2%B7E%203-black?style=flat" alt="DALL·E 3"  ></p>
+<div class="wavydiv2"></div>
+<h2 id="california-is-home-to-the-world-s-only-sloth-managed-startup-jungle-cms-">California Is Home To The World&#39;s Only Sloth-Managed Startup (Jungle CMS)</h2>
+<p>  Asked what reporting to a sloth was like, workers at Jungle CMS - hot on the back of a big VC raise - were enthusiastic:</p>
+<p>  &quot;He&#39;s hardly in the office and when he is, he&#39;s very chill,&quot; said their VP of marketing.</p>
+<p>  <img src="/images/sloths/slothceo.webp" alt="Sloth CEO" class="body-width">
+  <img src="https://img.shields.io/badge/DALL%C2%B7E%203-black?style=flat" alt="DALL·E 3"></p>
+<div class="wavydiv2"></div>
+<h2 id="sloths-need-to-keep-fit-too">Sloths Need To Keep Fit Too</h2>
+<p>  <img src="/images/sloths/slothonbenchpress.webp" alt="Sloth on bench press" class="body-width">
+  <img src="https://img.shields.io/badge/DALL%C2%B7E%203-black?style=flat" alt="DALL·E 3"></p>
+<div class="wavydiv2"></div>
+<h2 id="humans-and-sloths-can-even-be-friends">Humans And Sloths Can Even Be Friends</h2>
+<p>  Pointing to the success of the first sloth to win an Oscars as &quot;a historical moment for humanity&quot;, a notable futurology expert has said that human-sloth friendships are on the rise globally with sights such as these becoming increasingly commonplace.</p>
+<p>  <img src="/images/sloths/slothandman.webp" alt="Sloth and man" class="body-width">
+  <img src="https://img.shields.io/badge/DALL%C2%B7E%203-black?style=flat" alt="DALL·E 3"></p>
+<div class="wavydiv2"></div>
+<h2 id="costa-rica-once-almost-elected-a-sloth-as-its-president">Costa Rica Once Almost Elected A Sloth As Its President</h2>
+<p>  Is the world ready for a sloth president? We don&#39;t know.</p>
+<p>  But if it happens anywhere, it will be in Costa Rica, predict experts, where one ambitious sloth is vying to become the first of his species to make it into office.</p>
+<p>  <img src="/images/sloths/slothpresident.webp" alt="Sloth president" class="body-width">
+  <img src="https://img.shields.io/badge/DALL%C2%B7E%203-black?style=flat" alt="DALL·E 3"></p>
+<div class="wavydiv2"></div>
+<h2 id="sloths-love-being-driven-around-by-self-driving-cars">Sloths Love Being Driven Around By Self-Driving Cars</h2>
+<p>  It&#39;s a world that few could have imagined.</p>
+<p>  According to a news release from Tesla, the sloth population is among the fastest-growing demographics purchasing self-driving vehicles.</p>
+<p>  &quot;It&#39;s becoming quite routine to see a sloth being driven around by AI,&quot; said VP of Non-Human Sales Carl Huntingon, adding that &quot;compared to dogs and cats, this is a very savvy species with big ambitions, that trades on its sluggish reputation. It&#39;s almost part of their marketing!&quot;</p>
+<p>  <img src="/images/sloths/slothincar.webp" alt="Sloth in Tesla" class="body-width">
+  <img src="https://img.shields.io/badge/DALL%C2%B7E%203-black?style=flat" alt="DALL·E 3"></p>
+<div class="wavydiv2"></div>
+<h2 id="sloth-celebrities-won-big-at-this-year-s-oscars">Sloth Celebrities Won Big At This Year&#39;s Oscars</h2>
+<p>  Nobody could have predicted it, said a Hollywood source. It was also scandalous that it didn&#39;t make the mainstream news. Human jealousy, most probably.</p>
+<p>  <img src="/images/sloths/redcarpetsloth.webp" alt="Sloth on red carpet" class="body-width">
+  <img src="https://img.shields.io/badge/DALL%C2%B7E%203-black?style=flat" alt="DALL·E 3"></p>
+<div class="wavydiv2"></div>
+<h2 id="but-sloth-diets-are-suffering-under-human-influence">But Sloth Diets Are Suffering Under Human Influence</h2>
+<p>  Elon Musk&#39;s Neuralink may have created a world none of us could have imagined.</p>
+<p>  But dramatically heightened interactions between sloths and humans have led many to forego their traditional diet of leaves. Nutritional experts: &quot;their bodies just aren&#39;t primed for it. The results are pretty ugly.&quot;</p>
+<p>  <img src="/images/sloths/slothburger.webp" alt="Sloth on red carpet" class="body-width">
+  <img src="https://img.shields.io/badge/DALL%C2%B7E%203-black?style=flat" alt="DALL·E 3"></p>
+<div class="wavydiv2"></div>
+<h2 id="physicians-surge-in-sloth-patients-is-worrisome-">Physicians: Surge In Sloth Patients Is &quot;Worrisome&quot;</h2>
+<p>  Traditionally seen by vetenarians rather than physicians, the rapid societal shifts brought about by Neuralink have left the medical profession grappling with how to accomodate the needs of this emerging patient population.</p>
+<p>  &quot;We&#39;re taught bedside manners. But what&#39;s an appropriate way to frame a blood pressure check when your patient crawls in on the door? We&#39;re still very much exploring that&quot;</p>
+<p>  <img src="/images/sloths/slothbloodpressure.webp" alt="Sloth getting blood pressure taken" class="body-width">
+  <img src="https://img.shields.io/badge/DALL%C2%B7E%203-black?style=flat" alt="DALL·E 3"></p>
+<div class="wavydiv2"></div>
+<h2 id="sloth-crime-is-definitely-a-thing-say-local-police-chiefs">Sloth Crime Is &quot;Definitely A Thing&quot; Say Local Police Chiefs</h2>
+<p>  They may be famously cute and cuddly, but sloth-committed felonies are &quot;definitely a thing&quot; according to law enforcement officials.</p>
+<p>  &quot;They&#39;re not violent offenders, but when they have a craving for leaves, they&#39;ll just eat them,&quot; said a police source explaining that the concept of a supermarket was proving particularly challenging.</p>
+<p>  &quot;They see leaves in bags and eat them. Supermarket owners see this as basically shoplifting. We&#39;re trying to translate between worlds at times&quot;</p>
+<p>  <img src="/images/sloths/slothcrime1.webp" alt="Sloth crime" class="body-width">
+  <img src="https://img.shields.io/badge/DALL%C2%B7E%203-black?style=flat" alt="DALL·E 3">
+  <img src="/images/sloths/slothcrime2.webp" alt="Sloth crime" class="body-width">
+  <img src="https://img.shields.io/badge/DALL%C2%B7E%203-black?style=flat" alt="DALL·E 3"></p>
+<div class="wavydiv2"></div>
+<h2 id="animal-rights-activists-sloth-after-dinner-speaking-circuit-out-of-hand-crude-exhibitionism-">Animal Rights Activists: Sloth After-Dinner Speaking Circuit &quot;Out Of Hand&quot;, &quot;Crude Exhibitionism&quot;</h2>
+<p>  Neuralink may have given rise to animals capable of speech, but not everybody is happy with some of the consequences.</p>
+<p>  In particular animal rights activists have criticised the &quot;booming trade&quot; in hiring sloths as after-dinner speakers which they say has become a huge trend in Corporate America.</p>
+<p>  &quot;We think this is just a sanitised zoo of sorts and we oppose it,&quot; a spokesperson said. &quot;Every Fortune 500 has a sloth on call who they bring in to do motivational talks. It&#39;s exploitative&quot;</p>
+<p>  <img src="/images/sloths/slothspeaking.webp" alt="Sloth crime">
+  <img src="https://img.shields.io/badge/DALL%C2%B7E%203-black?style=flat" alt="DALL·E 3" class="body-width"></p>
+<div class="wavydiv2"></div>
+<h2 id="99-of-sloths-are-still-vegan-even-after-prolonged-human-interaction">99% Of Sloths Are Still Vegan Even After Prolonged Human Interaction</h2>
+<p>  If you&#39;re looking for a great BBQ this summer, make sure the invitation isn&#39;t coming from a sloth.</p>
+<p>  That&#39;s because research shows that 99% of them remain vegan even 5 years after undergoing Neuralink&#39;s world-changing &quot;Animal2Human&quot; procedure.</p>
+<p>  <img src="/images/sloths/bbqsloth.webp" alt="Sloth crime" class="body-width">
+  <img src="https://img.shields.io/badge/DALL%C2%B7E%203-black?style=flat" alt="DALL·E 3"></p>
+<div class="wavydiv2"></div>
+<h2 id="real-sloth-fact-sloths-need-sloth-crossings">Real Sloth Fact: Sloths Need Sloth Crossings</h2>
+<p>  The Sloth Conservation Foundation works on creating &quot;sloth crossings&quot; which cross between canopies and prevent sloths from having to make perilous descents onto roads where collisions with vehicles or attacks by predators are very real concerns.</p>
+<p>  <img src="/images/sloths/slothcrossing.webp" alt="Sloth and relatives" class="body-width">
+  <img src="https://img.shields.io/badge/DALL%C2%B7E%203-black?style=flat" alt="DALL·E 3"></p>
+<div class="wavydiv2"></div>
+<h2 id="unexpected-sloth-fact-they-re-really-good-at-pool-like-really-good-">Unexpected Sloth Fact: They&#39;re Really Good At Pool (Like, Really Good)</h2>
+<p>  Nobody has unravelled the mystery of why sloths are so famously good at pool but zoologists say that it may have something to do with their eyesight - or the fact that the green table resembles a familiar jungle environment.</p>
+<p>  More than 80% of the world&#39;s highest-ranked pool players are in fact sloths.</p>
+<p>  <img src="/images/sloths/slothpool.webp" alt="Sloth playing pool" class="body-width">
+  <img src="https://img.shields.io/badge/DALL%C2%B7E%203-black?style=flat" alt="DALL·E 3"></p>
+<div class="wavydiv2"></div>
+<h2 id="and-they-re-skilled-dentists">And They&#39;re Skilled Dentists</h2>
+<p>  The vast majority of vetetinary dentists are sloths.</p>
+<p>  <img src="/images/sloths/slothdentists.webp" alt="Sloth dentist" class="body-width">
+  <img src="https://img.shields.io/badge/DALL%C2%B7E%203-black?style=flat" alt="DALL·E 3"></p>
+<div class="wavydiv2"></div>
+<h2 id="costa-rica-even-has-a-sloth-owned-airline">Costa Rica Even Has A Sloth-Owned Airline</h2>
+<p>  Costa Rica has an airline that is entirely owned and operated by sloths, the only of its kind in the world.</p>
+<p>  <img src="/images/sloths/slothairline.webp" alt="Sloth dentist" class="body-width">
+  <img src="https://img.shields.io/badge/DALL%C2%B7E%203-black?style=flat" alt="DALL·E 3"></p>
+<div class="wavydiv2"></div>
+<h2 id="you-ll-find-them-working-in-the-food-industry">You&#39;ll Find Them Working In The Food Industry</h2>
+<p>  Subway and Trader Joe&#39;s are just two of the major corporations that have insituted separate leadership programmes for their sloth employees.</p>
+<p>  <img src="/images/sloths/subwaysloth.webp" alt="Subway Sloth" class="body-width">
+  <img src="https://img.shields.io/badge/DALL%C2%B7E%203-black?style=flat" alt="DALL·E 3"></p>
+<p>  <img src="/images/sloths/traderjoes.webp" alt="Trader Joe&#39;s Sloth" class="body-width">
+  <img src="https://img.shields.io/badge/DALL%C2%B7E%203-black?style=flat" alt="DALL·E 3"></p>
+<div class="wavydiv2"></div>
+<h2 id="and-on-the-front-lines-of-diplomacy-serving-their-nations">And On The Front Lines Of Diplomacy Serving Their Nations</h2>
+<p>  <img src="/images/sloths/passportsloth.webp" alt="Passport sloth" class="body-width">
+  <img src="https://img.shields.io/badge/DALL%C2%B7E%203-black?style=flat" alt="DALL·E 3"></p>
+<div class="wavydiv2"></div>
+<h2 id="you-may-even-have-received-assistance-from-a-sloth-and-never-known-it">You May Even Have Received Assistance From A Sloth And Never Known It</h2>
+<p>  <img src="/images/sloths/callcentersloth.webp" alt="Call center sloth" class="body-width">
+  <img src="https://img.shields.io/badge/DALL%C2%B7E%203-black?style=flat" alt="DALL·E 3"></p>
+<div class="wavydiv2"></div>
+<h2 id="-isp-tech-was-one-of-the-top-5-emerging-sloth-professions-according-to-a-landmark-study-of-sloths-in-the-workforce">&quot;ISP Tech&quot; Was One Of The &quot;Top 5 Emerging Sloth Professions&quot; According To A Landmark Study Of Sloths In The Workforce</h2>
+<p>  <img src="/images/sloths/ispsloth.webp" alt="Sloth working as ISP tech" class="body-width">
+  <img src="https://img.shields.io/badge/DALL%C2%B7E%203-black?style=flat" alt="DALL·E 3"></p>
+<div class="wavydiv2"></div>
+<h2 id="there-s-a-sloth-marathon">There&#39;s A Sloth Marathon</h2>
+<p>  Long considered antithetical to their very nature, sloths are taking up pursuits like running at record rates.</p>
+<p>  The world&#39;s first sloth-only marathon was held earlier this year.</p>
+<p>  <img src="/images/sloths/slothrace.webp" alt="Sloth running" class="body-width">
+  <img src="https://img.shields.io/badge/DALL%C2%B7E%203-black?style=flat" alt="DALL·E 3"></p>
+<div class="wavydiv2"></div>
+<h2 id="sloths-are-beginning-to-use-tinder-and-other-dating-apps">Sloths Are Beginning To Use Tinder And Other Dating Apps</h2>
+<p>  Sloths are used to finding mates through elaborate and ancient jungle rituals passed down from ancestors.</p>
+<p>  But thanks to advances made possible by Neuralink, many are taking to online dating - with mostly positive reports.</p>
+<p>  <img src="/images/sloths/slothontinder.webp" alt="Sloth using Tinder" class="body-width">
+  <img src="https://img.shields.io/badge/DALL%C2%B7E%203-black?style=flat" alt="DALL·E 3"></p>
+<div class="wavydiv2"></div>
+<h2 id="sloths-are-the-new-darlings-of-the-stand-up-scene">Sloths Are The New Darlings Of The Stand-up Scene</h2>
+<p>  Since Neuralink enabled sloth to talk, we found out that they&#39;re actually funny. Like, really funny.</p>
+<p>  Human comedians are reporting having a hard time getting booked at comedy clubs because nothing gets people in the door like a funny sloth telling jokes.</p>
+<p>  <img src="/images/sloths/standupsloth.webp" alt="Sloth standup" class="body-width">
+  <img src="https://img.shields.io/badge/DALL%C2%B7E%203-black?style=flat" alt="DALL·E 3"></p>
+<div class="wavydiv2"></div>
+<h2 id="sloths-need-sleep-too">Sloths Need Sleep Too</h2>
+<p>  It&#39;s past four in the morning where I live so I should really take a leaf from this guy&#39;s book (pun not intended - I would never take leaves from a sloth)</p>
+<p>  <img src="/images/sloths/tiredsloth.webp" alt="Sloth going to sleep" class="body-width">
+  <img src="https://img.shields.io/badge/DALL%C2%B7E%203-black?style=flat" alt="DALL·E 3"></p>
+<div class="wavydiv2"></div>
+ 
+<p>  To learn more about sloths and efforts to preserve the species, check out the Sloth Conservation Foundation here:</p>
+ 
+</Layout>

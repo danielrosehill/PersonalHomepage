@@ -1,0 +1,63 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { SEO } from "astro-seo";
+ const pageTitle = "Life Philosophy";
+const metatitle = "Daniel Rosehill life philosophy";
+const metadesc = "Some thoughts about different subjects including technology and working";
+const ogtitle = "Daniel Rosehill life philosophy";
+const ogtwittertitle = "Daniel Rosehill life philosophy";
+const ogtwitterdesc = "Some thoughts about different subjects including technology and working";
+import { Image } from 'astro:assets';
+
+---
+ 
+<SEO
+    title={metatitle}
+    description={metadesc}
+    openGraph={{
+      basic: {
+        title: ogtitle,
+        type: 'content',
+        image: "https://danielrosehill.com/ogthumbs/dr-default.png",
+      }
+    }}
+    twitter={{
+      creator: "@danielrosehill"
+    }}
+    extend={{
+      // extending the default link tags
+      link: [{ rel: "icon", href: "/favicon.ico" }],
+      // extending the default meta tags
+      meta: [
+        {
+          name: "twitter:image",
+          content: "https://danielrosehill.com/circlehs.png",
+        },
+        { name: "twitter:title", content: {ogtwittertitle}},
+        { name: "twitter:description", content: {ogtwitterdesc}},
+      ],
+    }}
+/>
+
+
+<Layout pageTitle={pageTitle}>
+      
+    <h2>Random Thoughts About Random Things...</h2>
+
+    <div class="center"><img src="/images/path.webp" class="body-width"></div> 
+
+
+
+    <h3>The Hard But Easy Way</h3>  
+    <p>Like many folks who dabble in things like Linux, computer-building, and home automation, I think that I'm sometimes mistaken for somebody who enjoys complication.</p>
+    <p>To the contrary! I think that technology should be as easy as possible. But sometimes configuring "easy but bad" solutions end up costing more time than just doing things the harder way.</p> 
+    <p>Examples: Python scripts can do more than many overengineered data wrangling tools but require learning Python. Editing code by hand and integrating libraries is hard but is often still easier than sifting through dozens of Wordpress plugins.</p>
+
+    <div class="wavy-divider"></div>
+
+    <div class="center"><img src="/images/png/kaizen.png" class="body-width"></div> 
+
+    <h3>Kaizen - The Vast Power Of Cumulative Incremental Improvement</h3>  
+    <p>If there is one philosophy from a different culture that speaks to me most, it's the idea of kaizen (my definition/interpretation: continuous iterative improvement sustained over time). I'm constantly trying to tell myself to work more 'kaizen'.</p>
+</Layout>
+ 

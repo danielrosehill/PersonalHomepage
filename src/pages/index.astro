@@ -1,0 +1,112 @@
+---
+import { SEO } from "astro-seo";
+import Layout from '../layouts/Layout.astro';
+const pageTitle = "Daniel Rosehill homepage";
+const title = "Daniel Homepage";
+const description = "The homepage of Daniel Rosehill";
+const basicTitle = "Daniel Rosehill's homepage";
+const ogTwitterTitle = "Daniel Rosehill Homepage";
+const ogTwitterDesc = "The personal homepage of Daniel Rosehill";
+---
+
+<SEO
+    title={title}
+    description={description}
+    openGraph={{
+      basic: {
+        title: basicTitle,
+        type: 'content',
+        image: "https://danielrosehill.com/ogthumbs/dr-default.png",
+      }
+    }}
+    twitter={{
+      creator: "@danielrosehill",
+      title: {ogTwitterTitle},
+      description: {ogTwitterDesc}
+    }}
+/>
+
+<meta property="article:author" content="Daniel Rosehill">
+<Layout pageTitle={pageTitle}>
+    <div class="gif">
+        <img width="200" height="200" alt="RaccoonSpaceGif" src="/circlehs.png"/>
+    </div>
+    <h1 class="fade-in">Daniel Rosehill</h1>
+    <p>Like <b>'Rose'</b> And <b>'Hill'</b> said one after the other.<p/>
+    <p>But please don't book me a table for "Mr Hill" as this has happened far too many times in my life and I may be many things but 'Rose' isn't one of them.</p>
+    <br/>
+
+    <img src="/images/reserved.webp" class="body-width" />
+
+    <div class="wavydiv2"></div>
+    <h3> About Me</h3>
+    <p>A tiny cog in a big mission to make the world a better place.</p>
+    <p>I like communications, technology, data, and Guinness.<br/> Just not in that order.</p>
+
+    <div class="wavy-divider"></div>
+<img src="/images/home/desk.webp"  class="body-width" />
+    <h2>Links, Projects</h2>
+    <p class="home-desc">Some of the things I'm currently working on</p>
+    <div class="center">
+        <a href="projects/">
+            <button class="btn">View</button>
+        </a>
+    </div>
+
+    <div class="wavy-divider"></div>
+
+    <h2>CV/Resume</h2>
+    <p class="home-desc">Hey, we've all got bills to pay</p>
+    <div class="center">
+        <a href="/cv/">
+            <button class="btn">Open</button>
+        </a>
+    </div>
+
+    <div class="wavy-divider"></div>
+
+    <h2>My Philosophy On Life, Work, Tech:</h2>
+    <p>Just a few open-ended thoughts to share some of the things that I believe in - and how I approach living (for obvious reasons - a document in constant evolution!)</p>
+    <div class="center">
+        <a href="/philosophy">
+            <button class="btn">View</button>
+        </a>
+    </div>
+
+    <div class="wavy-divider"></div>
+     
+    <img src="/images/table.webp" class="body-width" />
+    
+
+    <h2>Some Things About Me</h2>
+    <p>Here's a very informal bio for anyone interested:</p>
+    <p>I was born in Ireland.</p>
+    <p>I moved to Jerusalem, Israel about 10 years ago.<br/>"Jewish reasons" (Zionism).<br/><br/>But let's stay off politics for a moment.</p>
+    <p>I've walked a few paths in my professional life to date (journalism, communications). Most of my experience has been working in (or with) the software industry.</p>
+    <p>In a break with form, I'm currently working on a communications project for a non-profit and developing a <a href="https://www.impactdatabase.org" target="_blank">data portal</a> as a hybrid work-passion project.<br/>It's nice to think about the 'bigger picture'.</p>
+    <p>I love creating - whether through words, video, or designing websites.</p>
+    <p>I also like ideating, asking difficult questions to get at fundamentals, and trying to connect dots.</p>
+    <p>I'm old and jaded enough to believe it's socially acceptable to say that my current favorite pastime is arguing politics at the pub. But if you'd like me to sound more buttoned-up I can say that I also enjoy surfing (waves) and learning things.</p>
+
+    <h2>Working On It</h2>
+    <p class="home-desc">Current tech interests (there are usually a few):<br/><br/>
+        Anything that sits at the intersection between <b>data</b> and <b>storytelling</b> - especially <b>data visualisation</b> and <b>data storytelling</b>.<br/><br/>
+        Tools I am learning to leverage:</p>
+    <div class="skills center">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/wordpress.svg" class="skillicon" alt="Wordpress Icon" width="40" height="40">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg" class="skillicon" alt="Github Icon" width="40" height="40">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/python.svg" class="skillicon" alt="Python Icon" width="40" height="40">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/html5.svg" class="skillicon" alt="HTML Icon" width="40" height="40">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/astro.svg" class="skillicon" alt="Astro Icon" width="40" height="40">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/postgresql.svg" class="skillicon" alt="PostgreSQL Icon" width="40" height="40">
+    </div>
+
+    <div class="wavy-divider"></div>
+
+    <h2>Built With Astro</h2>
+    <p>I like Astro!</p>
+    <p>Yes, it's harder to use than Wordpress. But among the <i>countless</i> static site generators and headless CMS options I've looked into, Astro stood out to me for the supportiveness of its community and its focus on usability.</p>
+    <p>Many thanks to <a href="https://tristentomczak.me/" target="_blank">Tristen Tomczak</a> for the <a href="https://astro.build/themes/details/milky-way/" target="_blank">theme</a> which I started from (the previous version of this site was my "learning Astro the hard way" experience and is sadly no longer workable!).</p>
+
+    <div class="wavy-divider"></div>
+</Layout>
